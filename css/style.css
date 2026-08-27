@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/InterRegular.woff2) format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/InterSemiBold.woff2) format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/InterBold.woff2) format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #282828;
+}
+
+.catalog {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 985px;
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3 - 14px);
+  padding: 16px 16px 14px 16px;
+  border-radius: 24px;
+  background-color: #111827;
+}
+
+.card-img {
+  width: 100%;
+  height: 170px;
+  margin: 0 0 13px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.card-title {
+  margin: 0 0 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+
+.card-descr {
+  margin: 0 0 27px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0;
+  color: #94A3B8;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: auto 0 0;
+}
+
+.card-price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+
+.card-buy {
+  min-width: 82px;
+  padding: 11px 16px 12px;
+  border-radius: 12px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  background-color: #3B82F6;
+  transition: .3s;
+}
+
+.card-buy:hover {
+  background-color: #3069c4;
+}
+
+.card-buy:active {
+  background-color: #307df9;
+}
